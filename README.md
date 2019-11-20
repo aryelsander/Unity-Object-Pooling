@@ -17,7 +17,7 @@ Simple solution for creating object pooling in unity.
 
 # Example:
 
-using UnityEngine;
+﻿using UnityEngine;
 public class Test: MonoBehaviour
 {
   private void Start()
