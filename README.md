@@ -1,10 +1,10 @@
 # Unity Object Pooling
-
 Simple solution for creating object pooling in unity.
 
 # How to Use:
-
-## 1 Create a new empty GameObject in your scene.                                                                                                  ## 2 Add the ObjectPooling Script.                                                                                                                                                ## 3 Set the List of pool objects size and fill the fields.
+## 1 Create a new empty GameObject in your scene.
+## 2 Add the ObjectPooling Script.
+## 3 Set the List of pool objects size and fill the fields.
 ##   3.1 Object Name is used in SpawnObjectPool Method.
 ##   3.2 Object Prefab need a interface IPoolObject interface.
 ##   3.3 Max Objects In Scene creates initial prefabs and set the maximum quantity.
@@ -15,11 +15,11 @@ Simple solution for creating object pooling in unity.
 
 # Example:
 
-﻿using UnityEngine;
-public class Test: MonoBehaviour
-{
-  private void Start()
-  {
-    ObjectPooling.Instance.SpawnObjectPool("Ball",transform.position,quaternion.identity);
-  }
-}
+# using UnityEngine;
+# public class Test: MonoBehaviour
+# {
+#   private void Start()
+#   {
+#       ObjectPooling.Instance.SpawnObjectPool("Ball",transform.position,quaternion.identity);
+#   }
+# }
