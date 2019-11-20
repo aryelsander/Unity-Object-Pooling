@@ -12,14 +12,3 @@ Simple solution for creating object pooling in unity.
 ##  4 Use the method SpawnObjectPool to Get Spawn Objects.
 ##   4.1 If reach maximum objects and dynamic size is not enabled, you will not be able to use more objects until one of them is disabled again.
 ##  5 OnSpawn() method is call when the prefab is actived
-
-# Example:
-
-# using UnityEngine;
-# public class Test: MonoBehaviour
-# {
-#   private void Start()
-#   {
-#       ObjectPooling.Instance.SpawnObjectPool("Ball",transform.position,quaternion.identity);
-#   }
-# }
