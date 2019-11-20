@@ -7,12 +7,12 @@ public class PoolObject
     [Tooltip("The key value")][SerializeField] private string objectName;
     [SerializeField] private GameObject objectPrefab;
     [Tooltip("The initial quantity and max objects in scene")] [SerializeField] private int maxObjectsInScene;
-    [Tooltip("if active, increases the list when the quantity is greater than Max Objects In Scene")] [SerializeField] private bool dinamicSize;
+    [Tooltip("if active, increases the list when the quantity is greater than Max Objects In Scene")] [SerializeField] private bool dynamicSize;
     [HideInInspector] public List<GameObject> poolObjectList;
 
     public GameObject ObjectPrefab { get => objectPrefab;}
     public string ObjectName { get => objectName;}
-    public bool DinamicSize { get => dinamicSize;}
+    public bool DynamicSize { get => dynamicSize;}
     public int MaxObjectsInScene { get => maxObjectsInScene;}
     public void IncreaseMaxObjects()
     {
@@ -76,7 +76,7 @@ public class ObjectPooling : Singleton<ObjectPooling>
                     return SpawnFromPool(position, rotation, poolObject, i);
                 }
             }
-            if (poolObject.DinamicSize)
+            if (poolObject.DynamicSize)
             {
                 return CreateForPool(position, poolObject);
             }
